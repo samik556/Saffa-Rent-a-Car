@@ -16,16 +16,16 @@ const poppins = Poppins({
 
 export const metadata = {
   metadataBase: new URL("https://saffarentacar.com"),
-  title: "Saffa Rent a Car | Premium Car Rental Service in Pakistan",
-  description: "Rent luxury SUVs, economy sedans, and executive cars in Pakistan. Saffa Rent a Car offers the best daily, weekly, and monthly car hire rates with or without driver. VIP service guaranteed.",
-  keywords: "car rental pakistan, rent a car lahore, luxury car hire, rent a car with driver, monthly car rental pakistan, suv rental, prado rental pakistan, land cruiser rental",
+  title: "Saffa Rent a Car | Best Car Rental Lahore with Driver Pakistan",
+  description: "Saffa Rent a Car offers premium car rental services in Lahore with professional drivers. Rent luxury SUVs, Prado, Land Cruiser, and economy cars at affordable rates for weddings, corporate, and city travel.",
+  keywords: "rent a car lahore, car rental pakistan, rent a car with driver lahore, luxury car rental pakistan, prado for rent in lahore, land cruiser rental pakistan, wedding car rental lahore, cheap car hire pakistan, intercity car rental pakistan",
   authors: [{ name: "Saffa Rent a Car" }],
   alternates: {
     canonical: "https://saffarentacar.com",
   },
   openGraph: {
-    title: "Saffa Rent a Car | Premium Car Hire Services",
-    description: "Looking for a reliable car rental in Pakistan? Saffa Rent a Car provides luxury and economy vehicles at the best rates. Book your ride today!",
+    title: "Saffa Rent a Car | Premium Car Hire Services in Lahore",
+    description: "Looking for a reliable car rental in Lahore? Saffa Rent a Car provides luxury and economy vehicles with professional chauffeurs. Book your ride today!",
     url: "https://saffarentacar.com",
     siteName: "Saffa Rent a Car",
     images: [
@@ -33,7 +33,7 @@ export const metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Saffa Rent a Car Fleet",
+        alt: "Saffa Rent a Car - Luxury Fleet",
       },
     ],
     locale: "en_US",
@@ -41,14 +41,13 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Saffa Rent a Car | Premium Car Hire",
-    description: "Premium car rental services in Pakistan. Luxury SUVs, Sedans, and more.",
+    title: "Saffa Rent a Car | Best Car Rental in Lahore",
+    description: "Premium car rental services in Pakistan with professional drivers. Luxury SUVs, Sedans, and more at best rates.",
     images: ["/og-image.jpg"],
   },
   robots: {
     index: true,
     follow: true,
-    nocache: true,
     googleBot: {
       index: true,
       follow: true,
@@ -79,6 +78,7 @@ export default function RootLayout({ children }) {
               "@id": "https://saffarentacar.com",
               "url": "https://saffarentacar.com",
               "telephone": "+923224901754",
+              "priceRange": "$$",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Main Boulevard",
@@ -91,6 +91,14 @@ export default function RootLayout({ children }) {
                 "@type": "GeoCoordinates",
                 "latitude": 31.5204,
                 "longitude": 74.3587
+              },
+              "areaServed": {
+                "@type": "Country",
+                "name": "Pakistan"
+              },
+              "brand": {
+                "@type": "Brand",
+                "name": "Saffa Rent a Car"
               },
               "openingHoursSpecification": {
                 "@type": "OpeningHoursSpecification",

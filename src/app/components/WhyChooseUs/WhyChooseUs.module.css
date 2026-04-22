@@ -103,4 +103,12 @@
   .whyContainer {
     width: 90%;
   }
+
+}
+
+@media (max-width: 600px) {
+  .whyImageWrap {
+    order: 1;
+    min-height: 250px;
+  }
 }

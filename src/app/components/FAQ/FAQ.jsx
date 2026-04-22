@@ -4,20 +4,28 @@ import styles from './FAQ.module.css';
 
 const faqs = [
   {
-    q: "Is a security deposit required?",
-    a: "Yes, a minimal security deposit is required depending on the vehicle. It is fully refundable immediately upon the safe return of the car."
+    q: "Can I rent a car for self-drive?",
+    a: "No, Saffa Rent A Car exclusively provides chauffeur-driven services to ensure the highest standards of safety and comfort. We do not offer self-drive rentals."
   },
   {
-    q: "Can I take the rental car out of the city?",
-    a: "Absolutely. You can travel anywhere within Pakistan. Please note that fuel and toll taxes are the responsibility of the renter."
+    q: "Do you provide city-to-city travel?",
+    a: "Yes, absolutely! While we are based in Lahore, we provide safe and reliable city-to-city transfers. You can book our professional drivers for travel from Lahore to any destination across Pakistan."
   },
   {
-    q: "Do you provide cars with drivers or self-drive only?",
-    a: "We offer both options. You can choose to rent a vehicle for self-drive or hire one of our professional, background-checked chauffeurs."
+    q: "What types of vehicles are available in your fleet?",
+    a: "We have a diverse fleet ranging from economy sedans like Corolla and Civic to luxury SUVs like Prado and Land Cruiser. We also provide large vehicles like Hiace, Coaster, and even Limousines for special occasions."
   },
   {
-    q: "What is your policy regarding accidents or damages?",
-    a: "All our vehicles are fully insured. We do not charge for minor everyday scratches, but major damages will be subject to the standard insurance claim process."
+    q: "Are fuel and toll taxes included in the rates?",
+    a: "Our standard rates cover the vehicle and the driver's service. Fuel, motorway tolls, and parking fees are typically the responsibility of the client, but we can provide all-inclusive packages upon request."
+  },
+  {
+    q: "What services does Saffa Rent A Car offer?",
+    a: "We offer premium transportation for airport pick-and-drop, wedding events, corporate travel, city tours, and long-distance journeys with professional, background-checked chauffeurs."
+  },
+  {
+    q: "How do I make a booking?",
+    a: "Booking is quick and easy. Simply contact us via WhatsApp or phone. We will confirm your vehicle and provide you with the driver's details and pickup time immediately."
   }
 ];
 
@@ -39,8 +47,8 @@ const FAQ = () => {
           const isOpen = openIndex === index;
           return (
             <div key={index} className={`${styles.faqItem} ${isOpen ? styles.active : ''}`}>
-              <button 
-                className={styles.faqQuestion} 
+              <button
+                className={styles.faqQuestion}
                 onClick={() => toggleFAQ(index)}
                 aria-expanded={isOpen}
               >
