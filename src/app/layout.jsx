@@ -24,7 +24,7 @@ export const metadata = {
     canonical: "https://saffarentacar.com",
   },
   openGraph: {
-    title: "Saffa Rent a Car | Premium Car Hire Service",
+    title: "Saffa Rent a Car | Premium Car Hire Services",
     description: "Looking for a reliable car rental in Pakistan? Saffa Rent a Car provides luxury and economy vehicles at the best rates. Book your ride today!",
     url: "https://saffarentacar.com",
     siteName: "Saffa Rent a Car",
