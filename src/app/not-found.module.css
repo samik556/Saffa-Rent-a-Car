@@ -1,0 +1,39 @@
+.container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--clr-bg);
+}
+
+.content {
+  max-width: 500px;
+}
+
+.errorCode {
+  font-size: 8rem;
+  font-weight: 900;
+  color: var(--clr-border);
+  line-height: 1;
+  margin-bottom: -2rem;
+  opacity: 0.5;
+}
+
+.carIcon {
+  font-size: 4rem;
+  color: var(--clr-accent);
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text {
+  color: var(--clr-text-muted);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}

@@ -1,0 +1,131 @@
+.footer {
+  background: #0b1120;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 3rem 2rem 0;
+}
+
+.footerInner {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-weight: 800;
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+.logoText{
+  display: flex;
+  align-items: center;
+}
+.logoIcon {
+  color: var(--clr-accent);
+  font-size: 1.8rem;
+}
+
+.brandAccent {
+  color: var(--clr-accent);
+}
+
+.brandSuffix {
+  font-size: 0.4em;
+  font-weight: 500;
+  margin-left: 0px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.9;
+}
+
+.footerTagline {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #fff;
+  max-width: 350px;
+  line-height: 1.6;
+}
+
+.footerContact h5 {
+  font-family: var(--font-display) !important;
+  font-size: 1.5rem;
+  font-weight: 900 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.footerContact a {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  color: #fff;
+  transition: all var(--dur) var(--ease);
+}
+
+.footerContact a:hover {
+  color: var(--clr-accent);
+  transform: translateX(5px);
+}
+
+.footerBottom {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: #fff;
+}
+
+.developerInfo a {
+  color: var(--clr-accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .footerInner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 0 0 0;
+  }
+
+  .footerInner {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    width: 90%;
+  }
+
+  .footerBottom {
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .footerBottom p {
+    font-size: 12px !important;
+  }
+
+  .footerTagline {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,78 @@
+.ctaBanner {
+  position: relative;
+  min-height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.ctaBannerBg {
+  position: absolute;
+  inset: 0;
+}
+
+.ctaBannerImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ctaBannerOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(0px);
+}
+
+.ctaBannerContent {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 5rem 2rem;
+  max-width: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: var(--shadow-lg);
+}
+
+.ctaBannerTitle {
+  font-family: var(--font-display) !important;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 900 !important;
+  color: var(--clr-text);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.ctaBannerText {
+  color: var(--clr-text);
+  font-size: 1.15rem;
+  margin-bottom: 2.5rem;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaBannerActions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .ctaBanner {
+    min-height: 350px;
+  }
+
+  .ctaBannerContent {
+    padding: 2rem 1rem;
+  }
+
+  .ctaBannerTitle {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+  }
+}
