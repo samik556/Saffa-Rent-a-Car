@@ -2,6 +2,8 @@ import "./globals.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { Playfair_Display, Poppins } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -121,6 +123,8 @@ export default function RootLayout({ children }) {
       <body className={`${playfair.variable} ${poppins.variable}`}>
         <Header />
         <main>{children}</main>
+        <SpeedInsights />
+        <Analytics />
         <Footer />
       </body>
     </html>
